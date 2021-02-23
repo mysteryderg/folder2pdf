@@ -35,7 +35,7 @@ int DoesDirectoryHaveFiles(const char *path) { /*function that takes a path argu
 			continue;
 		/*dereference pointer ent structure to component d_name then compare the string with "." and ".."*/
 /*if they dont compare continue*/
-		ret = 0;
+		ret = 0; /* set return value to  0 */
 		break;
 	}
 
@@ -48,3 +48,4 @@ int DoesDirectoryHaveFiles(const char *path) { /*function that takes a path argu
 _Bool DoesDirectoryContainImages(DIR* dir) { //s_ifmt(); how to use
 		
 }
+//i should use the file system or something  to grab the file type
